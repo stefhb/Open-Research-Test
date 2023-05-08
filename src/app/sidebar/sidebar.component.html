@@ -1,0 +1,25 @@
+
+<div class="container">
+    <div class="header">
+        <div><img src="../../assets/images/rectangle-40.svg" /></div>
+        <div><img src="../../assets/images/profil.jpg" /></div>
+    </div>
+    <div class="content">
+        <h3>Companies</h3>
+
+        <div class="companies" *ngIf="companiesRaw">
+                <div *ngFor="let company of companiesRaw" class="company">
+                    {{ company.name }}  
+                </div>
+        </div>
+
+        <!-- <div class="companies" *ngIf="companies">
+            <div *ngFor="let company of companies" class="company">
+                {{ company.name }}  
+            </div>
+        </div> -->
+      
+
+    </div>
+</div>
+
